@@ -1,0 +1,20 @@
+# Requirements para el Proyecto ShuffleNet Transfer Learning
+# Autor: Benja
+# Proyecto: INFO1185 - Clasificación de Frutas y Verduras
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Utilidades para procesamiento de datos
+numpy>=1.24.0
+pillow>=9.5.0
+
+# Visualización (opcional, útil para análisis)
+matplotlib>=3.7.0
+
+# Progress bars para entrenamiento
+tqdm>=4.65.0
+
+# Para manejo de configuraciones (opcional)
+pyyaml>=6.0
