@@ -1,6 +1,6 @@
-# Requirements para el Proyecto ShuffleNet Transfer Learning
-# Autor: Benja
-# Proyecto: INFO1185 - Clasificación de Frutas y Verduras
+# Requirements para el Proyecto SqueezeNet Transfer Learning
+# Autores: Benja Espinoza y Pablo Antivil
+# Proyecto: INFO1185 - Clasificación de Vegetales con SqueezeNet 1.1
 
 # Deep Learning Framework
 torch>=2.0.0
