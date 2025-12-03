@@ -2,8 +2,8 @@
 
 Transfer Learning para Clasificación de Vegetales utilizando **SqueezeNet 1.1** preentrenado en ImageNet.
 
-**Autores:** Benja Espinoza y Pablo Antivil  
-**Curso:** INFO1185 - Inteligencia Artificial III  
+**Autores:** Benjamin Espinoza y Pablo Antivil  
+**Curso:** INFO1185 - Inteligencia Artificial  
 **Año:** 2025
 
 ---
@@ -48,24 +48,6 @@ archive/
 
 ---
 
-## 📁 Estructura del Proyecto
-
-```
-INFO1185-Proyecto3-SqueezeNet/
-├── SqueezeNet_Transfer_Learning.ipynb  # Notebook principal (Jupyter/Colab)
-├── archive/                            # Dataset (no versionado)
-│   ├── train/          (438 imágenes de las 5 clases)
-│   ├── validation/     (47 imágenes)
-│   └── test/           (50 imágenes)
-├── squeezenet_modelo_final.pth         # Modelo V1 guardado
-├── squeezenet_version_2a.pth           # Modelo V2A guardado
-├── squeezenet_version_2b.pth           # Modelo V2B guardado
-├── ANALISIS_Y_DISCUSION.md             # Análisis detallado del proyecto
-├── requirements.txt                    # Dependencias de Python
-├── .gitignore                          # Archivos ignorados por Git
-└── README.md                           # Documentación
-```
-
 **Nota:** El proyecto fue implementado en un único notebook de Jupyter para facilitar su ejecución en Google Colab.
 
 ---
@@ -107,55 +89,3 @@ jupyter notebook SqueezeNet_Transfer_Learning.ipynb
 
 ---
 
-## ✨ Parte 1 - Implementado
-
-### Preparación de Datos
-- ✅ Dataset pre-dividido (train/val/test)
-- ✅ Transformaciones con data augmentation
-- ✅ Normalización ImageNet
-- ✅ DataLoaders optimizados
-
-### Modelo SqueezeNet
-- ✅ SqueezeNet 1.1 preentrenado
-- ✅ Feature extractor congelado (512 features)
-- ✅ Tres variantes de clasificadores
-- ✅ Transfer Learning efectivo
-
----
-
-## 🧬 Información del Modelo
-
-```
-Arquitectura:     SqueezeNet 1.1
-Features:         512 (del feature extractor)
-Parámetros V1:    265,221 entrenables
-Parámetros V2A:   427,525 entrenables
-Parámetros V2B:   428,293 entrenables
-
-Clasificador V1:  Conv2d + Linear (simple)
-Clasificador V2:  4 capas FC (512→256→128→5)
-BatchNorm:        Solo V2B
-Dropout:          Solo V2B (p=0.3)
-```
-
----
-
-## 🔜 Parte 2 - Pendiente
-
-- [ ] Clasificador Versión 2 (complejo)
-- [ ] Loop de entrenamiento
-- [ ] Validación y métricas
-- [ ] Evaluación en test
-- [ ] Comparación de versiones
-
----
-
-## 📖 Referencias
-
-- [SqueezeNet Paper](https://arxiv.org/abs/1602.07360)
-- [PyTorch Transfer Learning](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html)
-- [SqueezeNet Documentation](https://pytorch.org/vision/stable/models/squeezenet.html)
-
----
-
-**Curso INFO1185 - Inteligencia Artificial III - 2024**
