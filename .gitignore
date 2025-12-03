@@ -49,15 +49,10 @@ runs/
 data/
 dataset/
 archive/
-*.jpg
-*.jpeg
-*.png
-*.gif
+
 
 # Visualizations
-*.png
-*.jpg
-*.pdf
+
 transformations_comparison.png
 batch_examples.png
 dataset_distribution.png
